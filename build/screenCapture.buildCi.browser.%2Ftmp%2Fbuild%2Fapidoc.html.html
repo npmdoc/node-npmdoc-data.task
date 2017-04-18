@@ -1,0 +1,464 @@
+<html><head></head><body><div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a href="https://github.com/folktale/data.task#readme">data.task (v3.1.1)</a>
+</h1>
+<h4>A structure for representing asynchronous actions with automatic resource handling.</h4>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.data.task">module data.task</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.data.task.task">
+            function <span class="apidocSignatureSpan">data.</span>task
+            <span class="apidocSignatureSpan">(computation, cleanup)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.data.task.empty">
+            function <span class="apidocSignatureSpan">data.task.</span>empty
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.data.task.of">
+            function <span class="apidocSignatureSpan">data.task.</span>of
+            <span class="apidocSignatureSpan">(b)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.data.task.rejected">
+            function <span class="apidocSignatureSpan">data.task.</span>rejected
+            <span class="apidocSignatureSpan">(a)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.data.task.task.empty">
+            function <span class="apidocSignatureSpan">data.task.</span>task.empty
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.data.task.task.of">
+            function <span class="apidocSignatureSpan">data.task.</span>task.of
+            <span class="apidocSignatureSpan">(b)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.data.task.task.rejected">
+            function <span class="apidocSignatureSpan">data.task.</span>task.rejected
+            <span class="apidocSignatureSpan">(a)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.data.task.task.toString">
+            function <span class="apidocSignatureSpan">data.task.</span>task.toString
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.data.task.toString">
+            function <span class="apidocSignatureSpan">data.task.</span>toString
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.data.task.empty">module data.task.empty</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.data.task.empty.empty">
+            function <span class="apidocSignatureSpan">data.task.</span>empty
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.data.task.of">module data.task.of</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.data.task.of.of">
+            function <span class="apidocSignatureSpan">data.task.</span>of
+            <span class="apidocSignatureSpan">(b)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.data.task.rejected">module data.task.rejected</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.data.task.rejected.rejected">
+            function <span class="apidocSignatureSpan">data.task.</span>rejected
+            <span class="apidocSignatureSpan">(a)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.data.task.toString">module data.task.toString</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.data.task.toString.toString">
+            function <span class="apidocSignatureSpan">data.task.</span>toString
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.data.task" id="apidoc.module.data.task">module data.task</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.data.task.task" id="apidoc.element.data.task.task">
+        function <span class="apidocSignatureSpan">data.</span>task
+        <span class="apidocSignatureSpan">(computation, cleanup)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Task(computation, cleanup) {
+  this.fork = computation;
+
+  this.cleanup = cleanup || function() {};
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.data.task.empty" id="apidoc.element.data.task.empty">
+        function <span class="apidocSignatureSpan">data.task.</span>empty
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _empty() {
+  return new Task(function() {});
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.data.task.of" id="apidoc.element.data.task.of">
+        function <span class="apidocSignatureSpan">data.task.</span>of
+        <span class="apidocSignatureSpan">(b)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _of(b) {
+  return new Task(function(_, resolve) {
+    return resolve(b);
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.data.task.rejected" id="apidoc.element.data.task.rejected">
+        function <span class="apidocSignatureSpan">data.task.</span>rejected
+        <span class="apidocSignatureSpan">(a)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _rejected(a) {
+  return new Task(function(reject) {
+    return reject(a);
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.data.task.task.empty" id="apidoc.element.data.task.task.empty">
+        function <span class="apidocSignatureSpan">data.task.</span>task.empty
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _empty() {
+  return new Task(function() {});
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.data.task.task.of" id="apidoc.element.data.task.task.of">
+        function <span class="apidocSignatureSpan">data.task.</span>task.of
+        <span class="apidocSignatureSpan">(b)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _of(b) {
+  return new Task(function(_, resolve) {
+    return resolve(b);
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.data.task.task.rejected" id="apidoc.element.data.task.task.rejected">
+        function <span class="apidocSignatureSpan">data.task.</span>task.rejected
+        <span class="apidocSignatureSpan">(a)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _rejected(a) {
+  return new Task(function(reject) {
+    return reject(a);
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.data.task.task.toString" id="apidoc.element.data.task.task.toString">
+        function <span class="apidocSignatureSpan">data.task.</span>task.toString
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">task.toString = function () {
+    return text;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.data.task.toString" id="apidoc.element.data.task.toString">
+        function <span class="apidocSignatureSpan">data.task.</span>toString
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">toString = function () {
+    return text;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    })
+  })
+}
+
+// decode : Task(Error, Buffer) -&gt; Task(Error, String)
+function decode(buffer) {
+  return buffer.map(function(a) {
+    return a.<span class="apidocCodeKeywordSpan">toString</span>('utf-8')
+  })
+}
+
+var intro = decode(read('intro.txt'))
+var outro = decode(read('outro.txt'))
+
+// You can use `.chain` to sequence two asynchronous actions, and
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.data.task.empty" id="apidoc.module.data.task.empty">module data.task.empty</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.data.task.empty.empty" id="apidoc.element.data.task.empty.empty">
+        function <span class="apidocSignatureSpan">data.task.</span>empty
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _empty() {
+  return new Task(function() {});
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.data.task.of" id="apidoc.module.data.task.of">module data.task.of</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.data.task.of.of" id="apidoc.element.data.task.of.of">
+        function <span class="apidocSignatureSpan">data.task.</span>of
+        <span class="apidocSignatureSpan">(b)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _of(b) {
+  return new Task(function(_, resolve) {
+    return resolve(b);
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.data.task.rejected" id="apidoc.module.data.task.rejected">module data.task.rejected</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.data.task.rejected.rejected" id="apidoc.element.data.task.rejected.rejected">
+        function <span class="apidocSignatureSpan">data.task.</span>rejected
+        <span class="apidocSignatureSpan">(a)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _rejected(a) {
+  return new Task(function(reject) {
+    return reject(a);
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.data.task.toString" id="apidoc.module.data.task.toString">module data.task.toString</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.data.task.toString.toString" id="apidoc.element.data.task.toString.toString">
+        function <span class="apidocSignatureSpan">data.task.</span>toString
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function toString() { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    })
+  })
+}
+
+// decode : Task(Error, Buffer) -&gt; Task(Error, String)
+function decode(buffer) {
+  return buffer.map(function(a) {
+    return a.<span class="apidocCodeKeywordSpan">toString</span>('utf-8')
+  })
+}
+
+var intro = decode(read('intro.txt'))
+var outro = decode(read('outro.txt'))
+
+// You can use `.chain` to sequence two asynchronous actions, and
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
+</body></html>
