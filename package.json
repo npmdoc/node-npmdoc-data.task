@@ -1,6 +1,6 @@
 {
     "author": "kai zhu <kaizhu256@gmail.com>",
-    "description": "api documentation for [data.task (v3.1.1)](https://github.com/folktale/data.task#readme) [![npm package](https://img.shields.io/npm/v/npmdoc-data.task.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-data.task) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-data.task.svg)](https://travis-ci.org/npmdoc/node-npmdoc-data.task)",
+    "description": "#### basic api documentation for  [data.task (v3.1.1)](https://github.com/folktale/data.task#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-data.task.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-data.task) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-data.task.svg)](https://travis-ci.org/npmdoc/node-npmdoc-data.task)",
     "devDependencies": {
         "data.task": "*",
         "electron-lite": "kaizhu256/node-electron-lite#alpha",
@@ -35,5 +35,5 @@
         "start": "PORT=${PORT:-8080} utility2 start test.js",
         "test": "(set -e; export PORT=$(utility2 shServerPortRandom); utility2 test test.js)"
     },
-    "version": "0.0.1"
+    "version": "2017.4.25"
 }

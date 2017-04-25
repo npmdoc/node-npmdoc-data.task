@@ -1,4 +1,7 @@
-# api documentation for  [data.task (v3.1.1)](https://github.com/folktale/data.task#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-data.task.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-data.task) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-data.task.svg)](https://travis-ci.org/npmdoc/node-npmdoc-data.task)
+# npmdoc-data.task
+
+#### basic api documentation for  [data.task (v3.1.1)](https://github.com/folktale/data.task#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-data.task.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-data.task) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-data.task.svg)](https://travis-ci.org/npmdoc/node-npmdoc-data.task)
+
 #### A structure for representing asynchronous actions with automatic resource handling.
 
 [![NPM](https://nodei.co/npm/data.task.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/data.task)
@@ -80,7 +83,8 @@
     "scripts": {
         "test": "make test"
     },
-    "version": "3.1.1"
+    "version": "3.1.1",
+    "bin": {}
 }
 ```
 
